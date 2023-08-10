@@ -31,6 +31,26 @@
       "name": "help",
       "command": "ng help",
       "runAtStart": false
+    },
+    "ng g m clock": {
+      "name": "ng g m clock",
+      "command": "ng g m clock"
+    },
+    "ng g c clock": {
+      "name": "ng g c clock",
+      "command": "ng g c clock"
+    },
+    "i puppeeter": {
+      "name": "i puppeeter",
+      "command": "i puppeeter"
+    },
+    "ng i pupeeter": {
+      "name": "ng i pupeeter",
+      "command": "ng i pupeeter"
+    },
+    "ng add pupeeter": {
+      "name": "ng add pupeeter",
+      "command": "ng add pupeeter"
     }
   }
 }

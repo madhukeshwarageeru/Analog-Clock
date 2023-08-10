@@ -1,0 +1,118 @@
+:host {
+  font-family: "Poppins", sans-serif;
+}
+
+.black-border {
+  border: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clock-wrapper {
+  width: 500px;
+  height: 500px;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  background-color: #282828;
+}
+.clock-analog {
+  border: 8px solid #282828;
+  position: relative;
+  color: white;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+  box-shadow: -4px -4px 10px rgba(116, 116, 116, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+    inset -4px -4px 10px rgba(116, 116, 116, 0.5),
+    4px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.clock-analog > * {
+  position: absolute;
+}
+
+.clock-analog .source {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px black;
+}
+
+.clock-analog .digit {
+  display: flex;
+  border: 0px solid white;
+  top: 3%;
+  left: 3%;
+  justify-content: center;
+  height: 94%;
+  width: 94%;
+  align-items: flex-start;
+}
+
+.clock-analog .digit b {
+  font-size: 1rem;
+  color: #808080;
+}
+.clock-analog .hand {
+  height: 100%;
+  width: 100%;
+  border: 0px solid white;
+}
+
+.hand::after {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  left: 50%;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+.hour-hand::after {
+  width: 7px;
+  height: 40px;
+  background-color: #ec0b43;
+}
+
+.min-hand::after {
+  width: 5px;
+  height: 75px;
+  background-color: #a3d41a;
+}
+
+.sec-hand::after {
+  width: 3px;
+  height: 115px;
+  background-color: #32908f;
+}
+
+.day {
+  width: 100%;
+  height: 100%;
+  border: 0px solid white;
+}
+
+.daylabel {
+  width: 30px;
+  height: 15px;
+  bottom: 48%;
+  left: 67%;
+  font-size: 0.8rem;
+  background-color: white;
+  color: #333232;
+}
